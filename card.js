@@ -38,8 +38,7 @@ Deck.prototype.draw = function(){
 };
 
 Deck.prototype.shuffle = function(){
-    var shuffledDeck = this.deck.sort(function(a,b){return .5 - Math.random()});
-    return shuffledDeck;
+    return this.deck.sort(function(a,b){return .5 - Math.random()});
 };
 
 Deck.prototype.numCardsLeft = function(){
